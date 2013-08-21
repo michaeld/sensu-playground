@@ -1,0 +1,29 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    maestrodev/wget (1.2.0)
+    puppetlabs/apt (1.2.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/gcc (0.1.0)
+    puppetlabs/stdlib (4.1.0)
+    sensu/sensu (0.7.5)
+      puppetlabs/apt (>= 0.0.0)
+      puppetlabs/stdlib (>= 0.0.0)
+    thomasvandoren/redis (0.0.9)
+      maestrodev/wget (>= 0.0.0)
+      puppetlabs/gcc (>= 0.0.0)
+
+GIT
+  remote: git@github.com:puppetlabs/puppetlabs-rabbitmq.git
+  ref: 2.0.2
+  sha: c4c01894cdc5cb245d22189167734bd72d2159fe
+  specs:
+    puppetlabs/rabbitmq (2.0.2)
+      puppetlabs/apt (>= 0.0.3)
+      puppetlabs/stdlib (>= 2.0.0)
+
+DEPENDENCIES
+  puppetlabs/rabbitmq (>= 0)
+  sensu/sensu (>= 0)
+  thomasvandoren/redis (= 0.0.9)
+
